@@ -28,7 +28,7 @@ const boxes = {
       this.createdBoxes[this.created - i].remove();
     }
     this.width = 30;
-    this.height = 10;
+    this.height = 30;
     this.created = 0;
   },
 };
