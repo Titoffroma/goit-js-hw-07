@@ -1,0 +1,80 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #707070;
+}
+section {
+  margin: 10px auto 40px;
+  padding: 30px 15px;
+  background: rgb(255, 237, 239);
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+h1 {
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+  color: black;
+  margin: 20px auto 10px;
+  text-align: center;
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #252525;
+  margin-bottom: 10px;
+}
+.tasks-list {
+  display: flex;
+  justify-content: center;
+  background-color: darkgray;
+  height: 60px;
+  padding: 15px 0px;
+  margin-bottom: 40px;
+}
+.task-list--item {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 20px;
+  text-decoration: none;
+  color: rgb(97, 20, 30);
+  background-color: rgb(197, 197, 197);
+  border-bottom: 5px solid #707070;
+  border-right: 5px solid #707070;
+}
+.task {
+  color: rgb(97, 20, 30);
+  border: 5px dotted #707070;
+  padding: 5px 20px;
+  width: fit-content;
+  transition: transform 500ms ease;
+  margin-bottom: 25px;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
+.return-home {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
+  color: darkblue;
+  border-radius: 5px;
+  background-color: rgb(218, 145, 255);
+  margin-left: 30px;
+}

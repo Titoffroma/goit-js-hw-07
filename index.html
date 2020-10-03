@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="home">Домашнее задание 1</h1>
+    <nav class="tasks-list">
+      <a href="#task1" class="task-list--item">Задание 1</a>
+      <a href="#task2" class="task-list--item">Задание 2</a>
+      <a href="#task3" class="task-list--item">Задание 3</a>
+      <a href="#task4" class="task-list--item">Задание 4</a>
+      <a href="#task5" class="task-list--item">Задание 5</a>
+      <a href="#task6" class="task-list--item">Задание 6</a>
+      <a href="#task7" class="task-list--item">Задание 7</a>
+      <a href="#task8" class="task-list--item">Задание 8</a>
+    </nav>
+    <section>
+      <h2 class="task" id="task1">Задание 1</h2>
+      <div>
+        <ul id="categories">
+          <li class="item">
+            <h2>Животные</h2>
+
+            <ul>
+              <li>Кот</li>
+              <li>Хомяк</li>
+              <li>Лошадь</li>
+              <li>Попугай</li>
+            </ul>
+          </li>
+          <li class="item">
+            <h2>Продукты</h2>
+
+            <ul>
+              <li>Хлеб</li>
+              <li>Петрушка</li>
+              <li>Творог</li>
+            </ul>
+          </li>
+          <li class="item">
+            <h2>Технологии</h2>
+
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Node</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <h2 class="task" id="task2">Задание 2</h2>
+      <div>
+        <h3>Ингридиенты</h3>
+        <ul id="ingredients"></ul>
+      </div>
+    </section>
+    <section>
+      <h2 class="task" id="task3">Задание 3</h2>
+      <div>
+        <ul id="gallery"></ul>
+      </div>
+    </section>
+    <section>
+      <h2 class="task" id="task4">Задание 4</h2>
+      <div id="counter">
+        <button type="button" data-action="decrement">-1</button>
+        <span id="value">0</span>
+        <button type="button" data-action="increment">+1</button>
+      </div>
+    </section>
+    <section>
+      <h2 class="task" id="task5">Задание 5</h2>
+      <input type="text" placeholder="Ваше имя?" id="name-input" />
+      <h3>Привет, <span id="name-output">незнакомец</span>!</h3>
+    </section>
+    <section>
+      <h2 class="task" id="task6">Задание 6</h2>
+      <input
+        type="text"
+        id="validation-input"
+        data-length="6"
+        placeholder="Введи 6 символов"
+      />
+    </section>
+    <section>
+      <h2 class="task" id="task7">Задание 7</h2>
+      <input id="font-size-control" type="range" />
+      <br />
+      <span id="text">Абракадабра!</span>
+    </section>
+    <section>
+      <h2 class="task" id="task8">Задание 8</h2>
+      <div id="controls">
+        <input type="number" min="0" max="100" step="1" />
+        <button type="button" data-action="render">Создать</button>
+        <button type="button" data-action="destroy">Очистить</button>
+      </div>
+
+      <div id="boxes"></div>
+    </section>
+    <script src="./js/main.js" type="module"></script>
+    <script src="./js/task-1.js" type="module"></script>
+    <script src="./js/task-2.js" type="module"></script>
+    <script src="./js/task-3.js" type="module"></script>
+    <script src="./js/task-4.js" type="module"></script>
+    <script src="./js/task-5.js" type="module"></script>
+    <script src="./js/task-6.js" type="module"></script>
+    <script src="./js/task-7.js" type="module"></script>
+    <script src="./js/task-8.js" type="module"></script>
+  </body>
+</html>
