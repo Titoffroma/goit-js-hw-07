@@ -20,7 +20,6 @@ const boxes = {
       this.width += 10;
       this.height += 10;
       this.created += 1;
-      console.log(this.created);
     }
   },
   destroyBoxes: function () {
