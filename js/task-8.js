@@ -10,7 +10,7 @@ const boxes = {
   createdBoxes: document.querySelector("#boxes").children,
   random: () => Math.floor(255 * Math.random()),
   createBoxes: function () {
-    for (let i = 1; i <= +this.value; i++) {
+    for (let i = 1; i <= this.value; i++) {
       const newDiv = document.createElement("div");
       newDiv.style.width = `${this.width}px`;
       newDiv.style.height = `${this.height}px`;

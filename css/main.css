@@ -8,15 +8,17 @@ body {
   font-weight: 400;
   color: #707070;
 }
+
 section {
   margin: 10px auto 40px;
   padding: 30px 15px;
   background: rgb(255, 237, 239);
-  width: 1200px;
+  width: 360px;
   display: flex;
   flex-direction: column;
   align-items: start;
 }
+
 h1 {
   font-family: "Russo One", sans-serif;
   font-weight: 400;
@@ -33,16 +35,30 @@ h2 {
 }
 .tasks-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   background-color: darkgray;
-  height: 60px;
-  padding: 15px 0px;
-  margin-bottom: 40px;
+  width: 300px;
+  padding: 15px 30px;
+  margin: 0px auto 40px;
+}
+
+@media screen and (min-width: 768px) {
+  section,
+  .tasks-list {
+    width: 700px;
+    padding: 15px 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section,
+  .tasks-list {
+    width: 1170px;
+  }
 }
 .task-list--item {
   display: inline-block;
   padding: 5px 10px;
-  margin-right: 20px;
   text-decoration: none;
   color: rgb(97, 20, 30);
   background-color: rgb(197, 197, 197);

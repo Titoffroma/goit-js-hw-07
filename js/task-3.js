@@ -24,11 +24,9 @@ let imgToInsert = images.reduce((acc, { url, alt }) => {
 galRef.insertAdjacentHTML("beforeend", imgToInsert);
 
 Object.assign(galRef.style, {
-  width: "1200px",
-  margin: "10px auto 10px",
   display: "flex",
   justifyContent: "center",
-  listStyleType: "none",
+  flexWrap: "wrap",
 });
 
 Array.from(galRef.querySelectorAll("img")).map(({ style }) => {
