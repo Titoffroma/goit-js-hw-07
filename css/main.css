@@ -14,9 +14,13 @@ section {
   padding: 30px 15px;
   background: rgb(255, 237, 239);
   width: 360px;
-  display: flex;
   flex-direction: column;
   align-items: start;
+  display: none;
+}
+
+section.apear {
+  display: flex;
 }
 
 h1 {
