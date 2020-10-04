@@ -74,7 +74,7 @@ h2 {
   border: 5px dotted #707070;
   padding: 5px 20px;
   width: fit-content;
-  transition: transform 500ms ease;
+  transition: transform 500ms ease, opacity 500ms ease;
   margin-bottom: 25px;
 }
 
