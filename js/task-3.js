@@ -16,19 +16,22 @@ const images = [
   },
 ];
 const galRef = document.querySelector("#gallery");
-images.map(({ url, alt }) => {
-  galRef.insertAdjacentHTML(
-    "beforeend",
-    `<li><img src=${url} alt='${alt}'></li>`
-  );
+
+let imgToInsert = images.reduce((acc, { url, alt }) => {
+  return (acc += `<li><img src=${url} alt='${alt}'></li>`);
+}, "");
+
+galRef.insertAdjacentHTML("beforeend", imgToInsert);
+
+Object.assign(galRef.style, {
+  width: "1200px",
+  margin: "10px auto 10px",
+  display: "flex",
+  justifyContent: "center",
+  listStyleType: "none",
 });
-galRef.style.width = "1200px";
-galRef.style.margin = "10px auto 10px";
-galRef.style.display = "flex";
-galRef.style.justifyContent = "center";
-galRef.style.listStyleType = "none";
-const galKidRef = Array.from(galRef.querySelectorAll("img"));
-galKidRef.map(({ style }) => {
+
+Array.from(galRef.querySelectorAll("img")).map(({ style }) => {
   Object.assign(style, {
     width: "300px",
     height: "200px",
