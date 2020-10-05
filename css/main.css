@@ -21,7 +21,7 @@ section {
 
 section.apear {
   display: flex;
-  display: -webkit-flex;
+  display: -webkit-box;
 }
 
 h1 {
